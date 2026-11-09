@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="desdentadoicon.png">
+    <title>Tothless Maze Game</title>
+    <style>
+        body{
+            margin: 0;
+            overflow: hidden;
+            background-color:black ;
+            
+
+        }
+        h1{
+            color: aliceblue;
+            text-align: center;
+            background-color: black;
+        }
+        canvas {
+            display: block;
+            margin: 0 auto;
+        }
+        div{
+            position:fixed;
+            text-align: center;
+            margin: auto auto;
+        }
+        input{
+            text-align: center;
+            height: 5em;
+            width: 10em;
+        }
+    </style>
+</head>
+
+<body onload="iniciar() ">
+    <h1>Tothless Maze Game</h1>
+    
+    
+    <canvas id="canvas" width="750" height="500" style="border: 2px solid #000;">
+
+
+    </canvas>
+    
+
+    <div id="buttons">
+        <input type="button" value="w" onclick="protagonista.move(value) ">
+        <br>
+        <input type="button" value="a" onclick="protagonista.move(value)">
+        <input type="button" value="s" onclick="protagonista.move(value)">
+        <input type="button" value="d" onclick="protagonista.move(value)">
+    </div>
+
+    
+
+
+
+    <script src="laberinto.js"></script>
+
+</body>
+
+</html>
